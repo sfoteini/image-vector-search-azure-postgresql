@@ -28,18 +28,18 @@ In this quickstart, you will explore the Image Retrieval APIs of Azure AI Vision
 
 1. Enable the `pgvector` extension on your Azure Cosmos DB for PostgreSQL cluster:
 
-  ```postgresql
-  SELECT CREATE_EXTENSION('vector');
-  ```
+    ```sql
+    SELECT CREATE_EXTENSION('vector');
+    ```
 
 2. Create a table:
 
-  ```postgresql
-  CREATE TABLE imagevectors(
-    file TEXT PRIMARY KEY,
-    embedding VECTOR(1024)
-    );
-  ```
+    ```sql
+    CREATE TABLE imagevectors(
+        file TEXT PRIMARY KEY,
+        embedding VECTOR(1024)
+        );
+    ```
 
 3. Save the keys of your Azure AI Vision and Azure Cosmos DB resources in an `.env` file.
 
@@ -51,18 +51,18 @@ Before you start:
 
 1. Enable the `pgvector` extension on your Azure Cosmos DB for PostgreSQL cluster:
 
-  ```postgresql
-  SELECT CREATE_EXTENSION('vector');
-  ```
+    ```sql
+    SELECT CREATE_EXTENSION('vector');
+    ```
 
 2. Create a table:
 
-  ```postgresql
-  CREATE TABLE imagevectors(
-    filename TEXT PRIMARY KEY,
-    embedding VECTOR(1024)
-    );
-  ```
+    ```sql
+    CREATE TABLE imagevectors(
+        filename TEXT PRIMARY KEY,
+        embedding VECTOR(1024)
+        );
+    ```
 
 3. Create an Azure Blob Storage container to store the images.
 
