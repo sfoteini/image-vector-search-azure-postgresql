@@ -1,8 +1,6 @@
 # Image Vector Similarity Search with Azure Computer Vision and PostgreSQL
 
-<p>
-  <a href="https://sfoteini.github.io/blog/image-vector-similarity-search-with-azure-computer-vision-and-postgresql/" target="_blank"><img src="https://img.shields.io/badge/Instructions-informational?style=for-the-badge" alt="Tutorial"></a>
-</p>
+> If you are interested in this topic, you can explore my repository [vector-search-azure-cosmos-db-postgresql](https://github.com/sfoteini/vector-search-azure-cosmos-db-postgresql), which provides comprehensive examples for text-to-image and image-to-image search using Azure Cosmos DB for PostgreSQL and the pgvector extension.
 
 In these Jupyter Notebooks, you will explore the Image Retrieval functionality of Azure AI Vision, which is powered by the Florence Foundation model. You will:
 
@@ -12,15 +10,14 @@ In these Jupyter Notebooks, you will explore the Image Retrieval functionality o
 Before starting to build your image vector similarity system, follow these steps:
 
 * Sign up for either an [Azure free account](https://azure.microsoft.com/free/?WT.mc_id=AI-MVP-5004971) or an [Azure for Students account](https://azure.microsoft.com/free/students/?WT.mc_id=AI-MVP-5004971). If you already have an active subscription, you can use it.
-* Create a Cognitive Services resource in the Azure portal.
-    
+* Create a Cognitive Services resource in the Azure portal. It is recommended to use the standard tier because the free tier allows only 20 transactions per minute.
+
     > The Image Retrieval APIs are available in the following regions: East US, France Central, Korea Central, North Europe, Southeast Asia, West Europe, West US.
 
 * Create an Azure Cosmos DB for PostgreSQL cluster.
 * Install Python 3.x, Visual Studio Code, Jupyter Notebook and Jupyter Extension for Visual Studio Code.
 
 You can check out my article ["Image Vector Similarity Search with Azure Computer Vision and PostgreSQL"](https://sfoteini.github.io/blog/image-vector-similarity-search-with-azure-computer-vision-and-postgresql/) if you want to learn more about this topic.
-
 
 ## Quickstart
 
@@ -71,3 +68,8 @@ Before you start:
 5. Run the `generate_embeddings.py` script to compute the embeddings of all the images. The embeddings are saved in a `.csv` file in the *embeddings* folder.
 
 6. Run the `upload_embeddings.py` script to populate the PostgreSQL table with data.
+
+## Resources
+
+* [Image Vector Similarity Search with Azure Computer Vision and PostgreSQL](https://sfoteini.github.io/blog/image-vector-similarity-search-with-azure-computer-vision-and-postgresql/)
+* [Image similarity search on Azure Cosmos DB for PostgreSQL with pgvector - GitHub repository](https://github.com/sfoteini/vector-search-azure-cosmos-db-postgresql)
